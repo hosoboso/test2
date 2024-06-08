@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap');
+
+Body {
+	line-height: 1.3em;
+	font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo UI", "Meiryo", "Helvetica Neue", arial, sans-serif;
+}
+
+h1 {
+	font-size: 1.3em;
+	line-height: 1.4;
+	border-style: solid;
+	font-weight: bold;
+	padding: 0.1em 0 0.1em 0.5em;
+	margin: 1em 0px 0.1em 0;
+	border-width: 0px 0px 1px 10px;
+	border-color: #000000;
+}
+
+pre,
+code {
+	font-family: "M PLUS 1 Code", monospace;
+}
+
+textarea {
+	width: 90%;
+}
+
+
+table {
+	margin: 1em 0 1em 0;
+	border: 1px solid #4d4d4d;
+}
+
+th {
+	background-color: #bdbdbd;
+	padding: 2px;
+	text-align: center;
+	border: 1px solid #4d4d4d;
+}
+
+td {
+	border: 1px solid #4d4d4d;
+	padding: 2px;
+}
+
+tr {
+	background-color: #ffffff;
+}
+
+table tr:nth-child(even) {
+	background-color: #ececec;
+}
+
+@media (max-width: 765px) {
+	table {
+		font-size: smaller;
+	}
+}
+
+.btn {
+	text-align: center;
+	cursor: pointer;
+	font-size: medium;
+	padding: 5px;
+	margin: 8px;
+	background: #ececec;
+	color: #000000;
+	transition: .3s;
+	box-shadow: 1px 1px 2px #666666;
+}
+
+.btn:hover {
+	box-shadow: none;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>Tabletag test</title>
+	<link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<h1>入力したテキストをテーブルタグに</h1>
+
+	<p>[TAB]区切りテキストをテーブルタグに変換する。</p>
+
+	<form name="form1">
+		<p><textarea id="textarea1" rows="10" cols="40" placeholder="ここにテキスト入力して「変換」ボタンを押す"></textarea></p>
+
+		<p><input type="button" value="変換" onclick="func1()"></p>
+
+		<p><input type="button" value="HTMLコードをクリップボードにコピー" onclick="func2()">
+		<div id="view2" style="color:rgb(196, 15, 15);"></div>
+		</p>
+
+		<p><textarea id="textarea2" rows="10" cols="40"></textarea></p>
+
+		<div id="view1" style="white-space: pre-wrap;border: 2px dotted gray;padding: 0.1em;margin: 0.1em;">
+			<p>ここに実際の表を表示</p>
+		</div>
+
+	</form>
+
+	<script src="js/table.js"></script>
+
+	<pre>header1	header2	header3
+111	aaa	AAAA
+222	bbb	BBBB
+333	ccc	CCCC
+444	ddd	DDDD</pre>
+
+	<p>↓</p>
+
+	<pre>
+<code>
+&lt;table&gt;
+&lt;thead&gt;
+	&lt;tr&gt;&lt;th&gt;header1&lt;/th&gt;&lt;th&gt;header2&lt;/th&gt;&lt;th&gt;header3&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+	&lt;tr&gt;&lt;td&gt;111&lt;/td&gt;&lt;td&gt;aaa&lt;/td&gt;&lt;td&gt;AAAA&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;td&gt;222&lt;/td&gt;&lt;td&gt;bbb&lt;/td&gt;&lt;td&gt;BBBB&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;td&gt;333&lt;/td&gt;&lt;td&gt;ccc&lt;/td&gt;&lt;td&gt;CCCC&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;td&gt;444&lt;/td&gt;&lt;td&gt;ddd&lt;/td&gt;&lt;td&gt;DDDD&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</code>
+</pre>
+
+</body>
+</html>
