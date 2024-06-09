@@ -10,7 +10,12 @@
 <body>
 	<h1>入力したテキストをテーブルタグに</h1>
 
-	<p>[TAB]区切りテキストをテーブルタグに変換する。</p>
+	<p>[TAB]区切りまたはカンマ「,」区切りテキストをテーブルタグに変換する。</p>
+
+	<div class="formstl">
+		<input type="radio" name="searchtype" id="num1" checked><label for="num1">[TAB]区切り</label>　
+		<input type="radio" name="searchtype" id="num2"><label for="num2">カンマ「,」区切り</label>
+	</div>
 
 	<form name="form1">
 		<p><textarea id="textarea1" rows="10" cols="40" placeholder="ここにテキスト入力して「変換」ボタンを押す"></textarea></p>
@@ -45,4 +50,5 @@
 		</code>
 	</pre>
 </body>
+
 </html>
