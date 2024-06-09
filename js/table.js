@@ -2,10 +2,6 @@ function func1() {
 	let gettext1 = document.getElementById("textarea1").value;
 	let gettext2 = document.getElementById("textarea2");
 
-	if (document.getElementById("num2").checked) {
-		gettext1 = gettext1.replaceAll(",", "\t");
-	}
-
 	//textarea1がカラの時は注意書き、それ以外は多次元配列arr2を作る
 	if (gettext1.length == 0) {
 		document.getElementById("view1").innerHTML = "テキストを入力してください";
@@ -14,7 +10,13 @@ function func1() {
 		arr1 = [];
 		arr1 = gettext1.split("\n");
 		arr2 = [];
-		arr2 = arr1.map((item1) => item1.split("\t"));
+		
+		if (document.getElementById("num1").checked) {
+			arr2 = arr1.map((item1) => item1.split("\t"));
+		}
+		else { //document.getElementById("num2").checked
+			arr2 = arr1.map((item1) => item1.split(","));
+		}
 	}
 
 	let tablerow = "";	//1行分のタグ
