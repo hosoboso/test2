@@ -5,6 +5,10 @@ Body {
 	font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo UI", "Meiryo", "Helvetica Neue", arial, sans-serif;
 }
 
+input, select, button, textarea {
+	font-family: inherit;
+}
+
 h1 {
 	font-size: 1.3em;
 	line-height: 1.4;
